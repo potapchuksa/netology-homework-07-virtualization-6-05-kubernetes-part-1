@@ -1,0 +1,1 @@
+# netology-homework-07-virtualization-6-05-kubernetes-part-1
