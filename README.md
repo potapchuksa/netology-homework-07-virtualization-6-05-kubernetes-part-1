@@ -28,6 +28,12 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 4. Установил minicube по инструкции с оффициального сайта, и стартанул.
 
+```
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+minikube start
+```
+
 ![](img/img-01-02.png)
 
 проверил поды
@@ -163,7 +169,7 @@ kubectl delete pod <имя-контейнера>
 в первом терминале
 
 ```
-kubectl port-forward pod/redis-54457d549d-2hh4q 6379:6379
+kubectl port-forward pod/<имя-контейнера> 6379:6379
 ```
 
 ![](img/img-03-03.png)
